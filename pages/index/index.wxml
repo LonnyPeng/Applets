@@ -9,6 +9,8 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <text class="user-date">{{date}}</test>
+  </view>
+  <view>
+	<text class="user-date">{{date}}</text>
   </view>
 </view>

@@ -21,5 +21,6 @@
 }
 
 .user-date {
-	color: #f00;
+	margin-top: 10px;
+	color: #ddd;
 }
