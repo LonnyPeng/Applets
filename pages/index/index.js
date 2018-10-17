@@ -6,7 +6,7 @@ const util = require('../../utils/util.js')
 Page({
   data: {
     motto: 'Hello World',
-    date: util.formatTime(new Date())
+    date: util.formatTime(new Date()),
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
