@@ -1,5 +1,10 @@
 //app.js
+var host = "https://demo.baogongpo.cn/Applets/";
+
 App({
+  service: {
+    host: host
+  },
   onLaunch: function () {
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []

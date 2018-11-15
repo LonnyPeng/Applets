@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 var app = getApp();
-var host = "https://demo.baogongpo.cn/Applets/";
 
 Page({
   data: {
@@ -16,7 +15,7 @@ Page({
     var $$ = this;
     
     wx.request({
-      url: host + 'index.php',
+      url: app.service.host + 'index.php',
       method: 'GET',
       data: {},
       header: {

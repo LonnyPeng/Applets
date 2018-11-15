@@ -1,4 +1,5 @@
-var app = getApp()
+var app = getApp();
+
 Page({
 	data: {
 		hidden:false,
@@ -67,7 +68,7 @@ Page({
 		var $$ = this;
 		
 		wx.request({
-		  url: host + 'dishes.php',
+		  url: app.service.host + 'dishes.php',
 		  method: 'GET',
 		  data: {},
 		  header: {
