@@ -1,11 +1,8 @@
 .aside{
-	width:4rem;
 	border-right: 1px solid #ddd;
-	font-size: .85rem;
 }
 .type-nav{
 	position: relative;
-	padding:.7rem .3rem;
 	text-align: center;
 	border-bottom: 1px solid #ddd;
 	z-index: 10;
@@ -21,20 +18,15 @@
 }
 
 .dish{
-	margin-left: 1rem;
-	padding: 1rem;
 	border-bottom: 1px solid #ddd;
 }
 .dish .title{
 	display: block;
-	font-size: 1rem;
 }
 .dish p{
 	color: orange;
-	font-size: .75rem;
 }
 .dish .add-btn{
-	width: 3rem;
 	text-align: right;
 }
 
@@ -44,6 +36,5 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding: 1rem;
 	background: #ddd;
 }
