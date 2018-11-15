@@ -1,7 +1,5 @@
 const app = getApp();
 
-var $ = require('../../jquery.js');
-
 Page({
 
   /**
@@ -71,7 +69,7 @@ Page({
     var data = e.detail.value;
 
     if (!data.username) {
-      $('#username-error').show();
+      // document.getElementById('username-error');
     }
   }
 })
