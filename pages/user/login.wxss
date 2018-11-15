@@ -1,0 +1,21 @@
+.login-box {
+  margin: 5px;
+  text-align: center;
+}
+
+.login-box .title {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.form input {
+  margin-top: 20px;
+  border-bottom: 1px solid #eee;
+  margin: 20px 10px;
+}
+
+.form button {
+  background-color: #ddd;
+  margin-top: 36px;
+}
