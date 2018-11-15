@@ -11,6 +11,6 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view>
-	<text class="user-date">{{date}}</text>
+    <text class="user-date">{{date}}</text>
   </view>
 </view>
