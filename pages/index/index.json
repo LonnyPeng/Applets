@@ -1,3 +1,5 @@
 {
-  
+	"navigationBarBackgroundColor": #eeeeee,
+	"navigationBarTextStyle": "white",
+	"navigationBarTitleText": "Login"
 }
