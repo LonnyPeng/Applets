@@ -40,8 +40,22 @@ Page({
     ]
   },
   onLoad: function () {
+    var $$ = this;
+
     wx.request({
       url: host + 'index.php',
+      method: 'GET',
+      data: {},
+      header: {
+        'content-type': 'application/json'
+      },
+      success: (res) => {
+        if (res.statusCode != 200) {
+          return false;
+        }
+
+        $$.data.imgUrls = res.data;
+      }
     })
   }
     
