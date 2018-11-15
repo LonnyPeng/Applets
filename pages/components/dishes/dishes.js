@@ -6,75 +6,8 @@ Page({
 		curIndex:0,
 		cart:[],
 		cartTotal:0,
-		navList:[
-			{
-				id:1,
-				name:'热销菜品'
-			},
-			{
-				id:2,
-				name:'热菜'
-			},
-			{
-				id:3,
-				name:'凉菜'
-			},
-			{
-				id:4,
-				name:'套餐'
-			}
-		],
-		dishesList:[
-			[
-				{
-					name:"红烧肉",
-					price:38,
-					num:1,
-					id:1
-				},
-				{
-					name:"宫保鸡丁",
-					price:58,
-					num:1,
-					id:29
-				},
-				{
-					name:"水煮鱼",
-					price:88,
-					num:1,
-					id:2
-				}
-			],
-			[
-				{
-					name:"小炒日本豆腐",
-					price:18,
-					num:1,
-					id:3
-				},
-				{
-					name:"烤鱼",
-					price:58,
-					num:1,
-					id:4
-				}
-			],
-			[
-				{
-					name:"大拌菜",
-					price:18,
-					num:1,
-					id:5
-				},
-				{
-					name:"川北凉粉",
-					price:8,
-					num:1,
-					id:6
-				}
-			],
-			[]
-		],
+		navList:[],
+		dishesList:[],
 		dishes:[]
 	},
 	loadingChange () {
@@ -85,6 +18,8 @@ Page({
 		},1000)
 	},
 	selectNav (event) {
+		this.loadingChange();
+
 		let id = event.target.dataset.id,
 			index = parseInt(event.target.dataset.index);
 			self = this;
@@ -128,6 +63,26 @@ Page({
 		})
 	},
 	onLoad () {
-		this.loadingChange()
+		this.loadingChange();
+		var $$ = this;
+		
+		wx.request({
+		  url: host + 'dishes.php',
+		  method: 'GET',
+		  data: {},
+		  header: {
+		    'content-type': 'application/json'
+		  },
+		  success: (res) => {
+		    if (res.statusCode != 200) {
+		      return false;
+		    }
+
+		    $$.setData({
+		      navList: res.data.navList,
+		      dishesList: res.data.dishesList
+		    })
+		  }
+		})
 	}
 })
