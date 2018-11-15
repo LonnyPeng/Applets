@@ -10,36 +10,11 @@ Page({
     autoplay: true,
     interval: 3000,
     duration: 1000,
-    navItems:[
-      {
-        name:'堂食',
-        url:'dishes'
-      },
-      {
-        name:'外卖',
-        url:'take',
-        isSplot:true
-      },
-      {
-        name:'外带',
-        url:'out'
-      },
-      {
-        name:'订单',
-        url:'bill'
-      },
-      {
-        name:'帐单',
-        url:'bill',
-        isSplot:true
-      },
-      {
-        name:'报表',
-        url:'bill'
-      }
-    ]
+    navItems:[]
   },
   onLoad: function () {
+    var $$ = this;
+    
     wx.request({
       url: host + 'index.php',
       method: 'GET',
@@ -52,9 +27,10 @@ Page({
           return false;
         }
 
-        this.data.imgUrls = res.data;
-
-        console.log(this.data);
+        $$.setData({
+          imgUrls: res.data.images,
+          navItems: res.data.navs
+        })
       }
     })
   }
