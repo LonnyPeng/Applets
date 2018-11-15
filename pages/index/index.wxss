@@ -19,8 +19,3 @@
 .usermotto {
   margin-top: 200px;
 }
-
-.user-date {
-	margin-top: 10px;
-	color: #ddd;
-}
