@@ -1,5 +1,7 @@
 const app = getApp();
 
+var $ = require('../../jquery.js');
+
 Page({
 
   /**
