@@ -7,7 +7,7 @@ Page({
     markers: [],
     // polyline: [{
     //   points: [{
-    //     longitude: 113.3245211,
+    //     longitude: 113.3245211,   
     //     latitude: 23.10229
     //   }, {
     //     longitude: 113.324520,
