@@ -1,4 +1,4 @@
 {
-    "navigationBarTitleText":"游戏列表",
-    "disableScroll": true
+    "navigationBarTitleText": "商城首页",
+    "enablePullDownRefresh": true
 }

@@ -1,34 +1,43 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/2048/2048"
-    
+    "pages/show_product/show_product",
+    "pages/address/address",
+    "pages/cart/cart",
+    "pages/cart/coupon",
+    "pages/mine/mine",
+    "pages/category/category"
   ],
   "window":{
-    "navigationBarBackgroundColor":"#333",
-    "navigationBarTitleText":"2048小游戏"
+    "backgroundColor": "#f2f2f2",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "巴爷供销社",
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#353535",
-    "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "color": "black",
+    "selectedColor": "#BF8600",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "position": "top",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "游戏",
-      "iconPath": "./assets/diamond.png",
-      "selectedIconPath": "./assets/diamond.png"
-    }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "./assets/star.png",
-      "selectedIconPath": "./assets/star.png"
+      "iconPath": "images/ba.png",
+      "selectedIconPath": "images/ba_active.png",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "iconPath": "images/cart.png",
+      "selectedIconPath": "images/cart_active.png",
+      "text": "分类"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "iconPath": "images/cart.png",
+      "selectedIconPath": "images/cart_active.png",
+      "text": "购物车"
     }]
-  },
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "debug": false
+  }
 }
