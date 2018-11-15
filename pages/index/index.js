@@ -40,7 +40,7 @@ Page({
     ]
   },
   onLoad: function () {
-    var $$ = this;
+    // var $$ = this;
 
     wx.request({
       url: host + 'index.php',
@@ -54,7 +54,9 @@ Page({
           return false;
         }
 
-        $$.data.imgUrls = res.data;
+        this.data.imgUrls = res.data;
+
+        console.log(this.data);
       }
     })
   }
