@@ -82,7 +82,7 @@ Page({
 			this.setData({
 				hidden:true
 			})
-		},2000)
+		},1000)
 	},
 	selectNav (event) {
 		let id = event.target.dataset.id,
