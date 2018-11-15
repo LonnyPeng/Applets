@@ -1,13 +1,11 @@
 //index.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
+var host = "https://demo.baogongpo.cn/Applets/";
+
 Page({
   data: {
-    imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-    ],
+    imgUrls: [],
     indicatorDots: true,
     autoplay: true,
     interval: 3000,
@@ -42,7 +40,9 @@ Page({
     ]
   },
   onLoad: function () {
-    console.log('onLoad')
+    wx.request({
+      url: host + 'index.php',
+    })
   }
     
 })
